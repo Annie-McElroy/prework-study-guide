@@ -17,26 +17,42 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage</li>
-          <li>The body element represents the visible content shown to the user</li>
-          <li>Headers have 6 levels to them, h1 should only be used once on a webpage</li>
-          <li>Images need a source (typed as "src") and a description (typed as "alt")</li>
-          <li>Resource for HTML: <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a></li>
+          <li>HTML stands for Hyper Text Markup Language. It is the standard markup language for creating webpages.</li>
+          <li>HTML consist of a series of elements. Elements tell the browser how to display content.</li>
+          <li>The head element contains information about the webpage.</li>
+          <li>The body element represents the visible content shown to the user.</li>
+          <li>Header (h) is an element that has 6 levels, h1 should only be used once on a webpage.</li>
+          <li>Image element needs a source (src) and a description (alt).</li>
+          <li>List can be created in unordered (ul) or ordered (ol) fashion with list items (li) nested within.</li>
+          <li>Resource for HTML: <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a>, <a href="https://www.w3schools.com/tags/tag_meta.asp">HTML Meta</a>, <a href="https://htmlcolorcodes.com/">HTML Color Codes</a></li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how mcuh space we want around the content inside an element.</li>
-          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
-          <li>External CSS style sheets are preferred to create "separation of concerns".</li>
-          <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. It's based on the idea that each section of code should have its own responsibility.</li>
-          <li>Inline CSS allows to add CSS coding inline with HTML coding, but is infelxible.</li>
-          <li>Internal CSS style sheet puts CSS styles in the "Head" of the HTML sheet but puts all you code together in one file.</li>
-          <li>Class attribues allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector.</li>
-          <li>Classs atrtibute can be assigned to the element in HTML, enabling us to freely choose which elements will be assigned the CSS rule</li>
+          <li>Cascading Style Sheets (or CSS) is the language used to style and HTML document. Describes how HTML elements should be displayed.</li>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+            <ul>
+              <li>External CSS style sheet is a seperate file containing only the CSS code that is linked to the HTML file. This is preferred to create "separation of concerns".</li>
+              <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. Think of it as each section of code should have its own responsibility.</li>
+              <li>Inline CSS allows to add CSS coding inline with HTML coding, but is infelxible.</li>
+              <li>Internal CSS style sheet puts CSS styles in the "Head" of the HTML sheet but puts all you code together in one file.</li>
+            </ul>
+          <li>CSS Syntac consists of a selector (points to HTML element to be styled) and declaration block (how HTML element should be styled).</li>
+          <li>Declaration block can contain one or more declasrations separated by semicolons. Each declaration includes CSS property name and value, separated by a colon. Some examples:</li>
+            <ul>
+              <li>A very simple example would be "color: red;" where color is the property and red is the value.</li>
+              <li>To align text in a certain fashion we'd use the property "text-align" and the value would indicate alignment (ex: center).</li>
+              <li>Other properties include:</li>
+                <ul>
+                  <li>A margin indicates how much space we want around the outside of an element.</li>
+                  <li>A padding indicates how much space we want around the content inside an element.</li>
+                  <li>Height/width are used to set the height and width of an element. Values include auto (default), length (defined in px, cm, etc.), percentage %, and more.</li>
+                </ul>
+            </ul>
+          <li>The class selector allows us to style any element we choose by assigning the rule to a class attribute with a class selector.</li>
+          <li>Class atrtibute can be assigned to the element in HTML, enabling us to freely choose which elements will be assigned the CSS rule. Ex: Each topic section is classed as "card" which allows for each section to be styled in a box with a shadow.</li>
           <li>Resource for CSS: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs on CSS</a>, <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a></li>
         </ul>
       </section>
@@ -44,21 +60,50 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b "branch-name": creates a new branch and switches to it</li>
-          <li>git pull: fetch and merge any commits from the remote repository/branch</li>
-          <li>git pull origin main: pulls and updates local repository (computer file) the latest update of the main branch from a remote repository (github)</li>
-          <li>git push: uploads content to a remote respository (github)</li>
-          <li>git rm "file": delete the file from project</li>
-          <li>git log: shows all commits in the current branch's history</li>
-          <li>git add -A: adds all files in working branch as it looks now to your next commit (stage)</li>
+          <li>Git is a version control system that's responsible for everything GitHub related that happens locally on your computer.</li>
+          <li>Key terms to understand:
+            <ul>
+              <li>Repository (or Repo): In short is a project on GitHub. Contains all files and revision histories.</li>
+              <li>Branch: Each repository can contain multiple copies of the same project. Each separate version is a "branch" of the original. Allows for separation of work to be done on same project without running into conflicts and allows for ease of version control.</li>
+              <li>Merging: When done with revisions on a branch, that branch can then be merged into the main branch.</li>
+              <li>Commit: A record of change. Has a unique id for tracking purposes and contains user-defined messages that describes changes made.</li>
+              <li>Issues: Used to help organize yourself within GitHub. Commonly used to track bugs or to-dos.</li>
+              <li>Pull/push: "Pulling" is to pull respository files onto local copies. Pushing is to update repository files with changes made locally.</li>
+              <li>Pull request: Allows for other users to review your "push" from branch before merged into main branch. Common practice for collaborative projects.</li>
+            </ul>
+          </li>
+          <li>Below are common Git commands:</li>
+            <ul>
+              <li>git status: checks what branch we are currently on</li>
+              <li>git checkout -b "branch-name": creates a new branch and switches to it</li>
+              <li>git pull: fetch and merge any commits from the remote repository/branch</li>
+              <li>git pull origin main: pulls and updates local repository (computer file) with the latest update of the main branch from a remote repository (github)</li>
+              <li>git push: uploads content to a remote respository (github)</li>
+              <li>git rm "file": delete the file from project</li>
+              <li>git log: shows all commits in the current branch's history</li>
+              <li>git add -A: adds all files in working branch as it looks now to your next commit (stage)</li>
+            </ul>
+          <li>Resources for GitHub and Git: <a href="https://handbook.tts.gsa.gov/training-and-development/intro-to-github/">Intro to GitHub</a>, <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a>, <a href="https://unito.io/blog/guide-to-github-for-project-managers/">Guide to GitHub</a></li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript adds interactivity to a website.</li>
+          <li>Variables are containers that store values. Example: Variable is a box called "Shape", the value Circle is contained in the box "Shape".</li>
+          <li>There are several types of variables:</li>
+            <ul>
+              <li>String: A squences of text, must be enclosed in single or double quote marks.</li>
+              <li>Number: Used for numbers. Does not have quotes around them.</li>
+              <li>Boolean: True/False value. True/False are special keywords that don't require quote marks.</li>
+              <li>Array: Strucutre that allows storing mulitple values in a single reference. Example: Variable "Shapes" stores the values Circle, Square, and Triangle.</li>
+              <li>Object: Everything in JavaScript is an object and can be stored in a variable.</li>
+            </ul>
+          <li>Conditionals are code strucutres used to test if an expression returns true or not. A very common conditional is the "if...else" statement.</li>
+          <li>Functions defines a block of code to perform a specific task. Functions do not excute automatically, instead you must call a fuction by name in order to execute. This allows the code to be more reasily reusable and ease of control.</li>
+          <li>JavaScript supports control flow statements. Control flow is the order in which a computer executes code in a script.</li>
+          <li> Resources for JavaScript: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDM JavaScript Basics</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">Data Types and Strucutres</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a></li>
         </ul>
       </section>
     </main>
